@@ -49,6 +49,7 @@ const generateBotResponse = async (incomingMessageDiv) => {
         //Fetch Bot response dari API
         const API_URL = "/api/chat";
         const response = await fetch(API_URL, requestOptions);
+        console.log("RESPONSE:", response);
         
         const data = await response.json();
         if(!response.ok) throw new Error(data.error.message);

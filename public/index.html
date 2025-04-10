@@ -7,6 +7,64 @@
     <link rel="stylesheet" href="/css/style.css"/>
   </head>
   <body>
+    <button id="helpBtn" class="btn-help">❓</button>
+    <div id="helpModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Panduan Pengguna</h2>
+    
+        <p><strong>📌 Deskripsi Aplikasi:</strong><br>
+        Diet Assistant adalah aplikasi berbasis web yang membantu pengguna menjaga pola makan sehat melalui dua fitur utama: Chatbot Resep Diet dan Kalkulator BMI.</p>
+        <hr>
+        <p><strong>Fitur Chatbot Resep Diet & Estimasi Kalori:</strong></p>
+        <ul>
+          <li>Masukkan prompt seperti: <br>
+          <em>"Berikan rekomendasi makanan sehat dengan bahan ayam, brokoli, dan wortel. Berapa estimasi kalori dari resep tersebut?"</em></li>
+          <li>Atau upload gambar makanan dan ketik: <br>
+          <em>"Dari gambar ini, berapa estimasi kalorinya per 100 gram?"</em></li>
+        </ul>
+        <p>Chatbot akan merespons dengan rekomendasi resep dan estimasi kalori berdasarkan input teks atau gambar.</p>
+        <p>Anda juga bisa bertanya terkait tips diet lainnya!</p>
+        <hr>
+    
+        <p><strong>Fitur Kalkulator BMI:</strong></p>
+        <ul>
+          <li>Masukkan data diri secara berurutan:
+            <ol>
+              <li>Jenis Kelamin</li>
+              <li>Umur</li>
+              <li>Berat Badan (kg)</li>
+              <li>Tinggi Badan (cm)</li>
+            </ol>
+          </li>
+          <li>Setelah semua data dimasukkan, klik tombol <strong>"Hitung"</strong>.</li>
+          <li>Hasil akan menampilkan nilai BMI dan status berat badan (ideal, kurang, atau berlebih).</li>
+        </ul>
+    
+        <hr>
+        <p>💡 Tips Penggunaan
+          <ul>
+            <li>Gunakan satuan "gram" saat menyebutkan jumlah makanan.</li>
+            <li>Jika mengunggah gambar, pastikan gambar jelas dan tidak blur.</li>
+            <li>Jangan lupa untuk memasukkan prompt setelah upload gambar agar chatbot tahu yang diminta.</li>
+          </ul>
+        <p>Pertanyaan Umum (FAQ):
+          <ul>
+            <strong>Q: Gambar saya tidak terdeteksi, kenapa?</strong><br>
+            A: Pastikan ukuran file tidak terlalu besar, dan gambar berisi makanan yang jelas. 
+          </ul>
+          <ul>
+            <strong>Q: Chatbot lambat merespons?</strong><br>
+            A: Terkadang server AI butuh waktu beberapa detik untuk memproses permintaan.
+          </ul>
+        </p>
+    
+        <p><strong>🔗 Link Github Selengkapnya:</strong><br>
+          GitHub: <a href="https://github.com/Raniah1403/Diet-Asisstant" target="_blank">github.com/Raniah1403/Diet-Asisstant</a>
+        </p>
+      </div>
+    </div>
+
     <div class="container">
       <h1>Selamat Datang di Resep Diet Assistant 🍽️</h1>
       <p>Temukan rekomendasi resep diet sehat dan hitung BMI kamu!</p>
@@ -15,5 +73,7 @@
         <a href="/bmi.html" class="btn">📏 Kalkulator BMI</a>
       </div>
     </div>
+
+    <script src="/js/index.js" defer></script>
   </body>
 </html>

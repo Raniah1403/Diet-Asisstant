@@ -1,62 +1,61 @@
-# CalorieChatbot
+# Diet Assistant
 
-**CalorieChatbot** adalah aplikasi web interaktif yang membantu pengguna:
-- Mendapatkan rekomendasi **resep diet sehat** melalui chatbot berbasis AI
-- Menghitung **BMI (Body Mass Index)** untuk mengetahui status berat badan ideal
+**CalorieChatbot** adalah aplikasi web interaktif untuk membantu pengguna:
+
+- Mendapatkan rekomendasi **resep diet sehat** melalui chatbot AI
+- Menghitung **BMI (Body Mass Index)**
+- Membaca **berita kesehatan/diet** terkini
 
 ## Fitur Utama
 
-- Chatbot cerdas yang terhubung dengan **Gemini API** dari Google
-- Kalkulator BMI dengan tampilan interaktif
-- Tampilan user-friendly dengan HTML, CSS, dan JavaScript murni
-- Backend sederhana menggunakan **Express.js** untuk mengamankan API Key
+- Chatbot cerdas (terhubung Gemini API Google)
+- Kalkulator BMI interaktif
+- Berita kesehatan/diet dari GNews API (otomatis, gambar & deskripsi tampil responsif)
+- Tampilan modern, responsif, dan konsisten di semua halaman (beranda, chatbot, BMI, berita, about)
+- UI/UX mobile friendly: layout, gambar, dan komponen utama tetap rapi di berbagai ukuran layar
 
 ## Teknologi yang Digunakan
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
-- **API AI:** Google Gemini (via Generative Language API)
-- **Environment:** dotenv
-- **Deployment:** Render.com
-- **Lainnya:** Emoji picker, file upload, CORS
+- **API:** Google Gemini, GNews
+- **Lainnya:** dotenv, emoji picker, file upload, CORS
 
-## Panduan Penggunaan Website:
-1. Fitur chatbot:
-- Mendapatkan **rekomendasi resep diet**.
-- Memperkirakan **jumlah kalori** dari bahan makanan.
-  
-**Input yang didukung:**
-- **Teks**: Masukkan daftar bahan makanan atau pertanyaan seperti:
-  > "Berapa kalori dalam 100 gram ayam goreng?"
-- **Gambar**: Upload gambar makanan yang kamu makan, lalu masukkan pertanyaan seperti:
-  > "Tolong estimasikan jumlah kalorinya per 100 gram."
+## Cara Menjalankan
 
-2. Kalkulator BMI
-- untuk menghitung apakah berat badan kamu **termasuk kurus, ideal, kelebihan berat badan, atau obesitas**.
+1. Clone repo ini
+2. Install dependencies: `npm install`
+3. Buat file `.env` dengan isi:
+   ```env
+   GNEWS_API_KEY=xxx
+   GEMINI_API_KEY=xxx
+   ```
+4. Jalankan server: `node server.js`
+5. Buka di browser: `http://localhost:3000`
 
-**Langkah-langkah:**
-1. Masukkan **jenis kelamin**.
-2. Masukkan **umur**.
-3. Masukkan **berat badan (kg)**.
-4. Masukkan **tinggi badan (cm)**.
-5. Klik **"Hitung BMI"**.
-6. Hasil akan muncul bersama kategori BMI kamu.
+## Panduan Penggunaan Website
 
-### 💡 Tips Penggunaan
+- **Beranda:**
+  - Hero section dengan gambar dan efek lingkaran, otomatis responsif (gambar disembunyikan di mobile)
+  - Navigasi ke semua fitur
+- **Chatbot:**
+  - Konsultasi diet, tanya kalori, upload gambar makanan
+  - Input teks & gambar, emoji picker
+- **Kalkulator BMI:**
+  - Masukkan data, klik hitung, hasil & kategori BMI muncul
+- **Berita:**
+  - Berita kesehatan/diet/olahraga/nutrisi dari GNews API
+  - Card berita modern, gambar & deskripsi tampil, responsif di mobile
+- **About:**
+  - Penjelasan singkat fitur dan misi website
 
-- Gunakan satuan **gram** saat menyebutkan jumlah makanan.
-- Jika mengunggah gambar, pastikan **gambar jelas dan tidak blur**.
-- Jangan lupa untuk **memasukkan prompt** setelah upload gambar agar chatbot tahu yang diminta.
-- Klik tombol "Kirim" setelah menuliskan pertanyaan di chatbot.
+## Perubahan Terbaru
 
-### ❓ Pertanyaan Umum
+- Tampilan modern & konsisten di semua halaman
+- Hero section, feature row, info-cards, mission section responsif
+- Card berita lebih ramping, gambar otomatis tampil jika ada
+- Semua layout, gambar, dan komponen utama sudah rapi di mobile
+- Fetch berita dari backend, fallback otomatis ke bahasa Inggris jika tidak ada hasil Indonesia
+- Semua script JS sudah dipisah per fitur
 
-**Q: Gambar saya tidak terdeteksi, kenapa?**  
-A: Pastikan ukuran file tidak terlalu besar, dan gambar berisi makanan yang jelas.
-
-**Q: Chatbot lambat merespons?**  
-A: Terkadang server AI butuh waktu beberapa detik untuk memproses permintaan.
-
-Jika ada pertanyaan, silakan kontak saya via GitHub atau email ( raniah.23251@mhs.unesa.ac.id )
-
-
+---

@@ -5,76 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resep Diet Assistant</title>
     <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
   </head>
   <body>
-    <button id="helpBtn" class="btn-help">❓</button>
-    <div id="helpModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Panduan Pengguna</h2>
-    
-        <p><strong>📌 Deskripsi Aplikasi:</strong><br>
-        Diet Assistant adalah aplikasi berbasis web yang membantu pengguna menjaga pola makan sehat melalui dua fitur utama: Chatbot Resep Diet dan Kalkulator BMI.</p>
-        <hr>
-        <p><strong>Fitur Chatbot Resep Diet & Estimasi Kalori:</strong></p>
-        <ul>
-          <li>Masukkan prompt seperti: <br>
-          <em>"Berikan rekomendasi makanan sehat dengan bahan ayam, brokoli, dan wortel. Berapa estimasi kalori dari resep tersebut?"</em></li>
-          <li>Atau upload gambar makanan dan ketik: <br>
-          <em>"Dari gambar ini, berapa estimasi kalorinya per 100 gram?"</em></li>
-        </ul>
-        <p>Chatbot akan merespons dengan rekomendasi resep dan estimasi kalori berdasarkan input teks atau gambar.</p>
-        <p>Anda juga bisa bertanya terkait tips diet lainnya!</p>
-        <hr>
-    
-        <p><strong>Fitur Kalkulator BMI:</strong></p>
-        <ul>
-          <li>Masukkan data diri secara berurutan:
-            <ol>
-              <li>Jenis Kelamin</li>
-              <li>Umur</li>
-              <li>Berat Badan (kg)</li>
-              <li>Tinggi Badan (cm)</li>
-            </ol>
-          </li>
-          <li>Setelah semua data dimasukkan, klik tombol <strong>"Hitung"</strong>.</li>
-          <li>Hasil akan menampilkan nilai BMI dan status berat badan (ideal, kurang, atau berlebih).</li>
-        </ul>
-    
-        <hr>
-        <p>💡 Tips Penggunaan
-          <ul>
-            <li>Gunakan satuan "gram" saat menyebutkan jumlah makanan.</li>
-            <li>Jika mengunggah gambar, pastikan gambar jelas dan tidak blur.</li>
-            <li>Jangan lupa untuk memasukkan prompt setelah upload gambar agar chatbot tahu yang diminta.</li>
-          </ul>
-        <p>Pertanyaan Umum (FAQ):
-          <ul>
-            <strong>Q: Gambar saya tidak terdeteksi, kenapa?</strong><br>
-            A: Pastikan ukuran file tidak terlalu besar, dan gambar berisi makanan yang jelas. 
-          </ul>
-          <ul>
-            <strong>Q: Chatbot lambat merespons?</strong><br>
-            A: Terkadang server AI butuh waktu beberapa detik untuk memproses permintaan.
-          </ul>
-        </p>
-        <hr>
-    
-        <p><strong>🔗 Link Github Selengkapnya:</strong><br>
-          GitHub: <a href="https://github.com/Raniah1403/Diet-Asisstant" target="_blank">github.com/Raniah1403/Diet-Asisstant</a>
-        </p>
-      </div>
-    </div>
+    <header class="main-header">
+      <div class="logo">Diet Assistant</div>
+      <nav class="nav-menu">
+        <a href="/index.html">Beranda</a>
+        <a href="/chatbot.html">Chatbot</a>
+        <a href="/bmi.html">Kalkulator BMI</a>
+        <a href="/berita.html">Berita</a>
+        <a href="/About.html">About Us</a>
+      </nav>
+    </header>
 
-    <div class="container">
-      <h1>Selamat Datang di Resep Diet Assistant 🍽️</h1>
-      <p>Temukan rekomendasi resep diet sehat dan hitung BMI kamu!</p>
-      <div class="menu">
-        <a href="/chatbot.html" class="btn">🧠 Chatbot Resep Diet</a>
-        <a href="/bmi.html" class="btn">📏 Kalkulator BMI</a>
-      </div>
-    </div>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="highlight">Welcome to your<br><span>Diet Assistant!</span></h1>
+          <p class="subtitle"><span class="accent">Let's kickstart</span> your wellness journey together</p>
+          <a href="#start" class="btn btn-start">Start</a>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-circles">
+            <div class="hero-circle1"></div>
+            <div class="hero-circle2"></div>
+            <div class="hero-circle3"></div>
+          </div>
+          <img src="/assets/heroimg.png" alt="Healthy Woman" />
+        </div>
+      </section>
 
+      <section class="feature-row chatbot-feature-row">
+        <div class="chatbot-feature-img">
+          <img src="/assets/image.jpg" alt="Healthy Food" />
+        </div>
+        <div class="chatbot-feature-card">
+          <p class="chatbot-feature-desc">Confused about what to eat or how to stay fit? Let our chatbot guide you</p>
+          <div class="chatbot-feature-btnbox">
+            <div class="chatbot-feature-icon">
+              <img src="/assets/frame.png" alt="Chatbot Icon"/>
+            </div>
+            <a href="/chatbot.html" class="btn chatbot-feature-btn">Chatbot</a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="info-cards">
+        <div class="info-card blue-card">
+          <p>Discover expert-backed tips and insights to support your healthy lifestyle!</p>
+          <div class="info-btnbox">
+            <img src="/assets/news.png" alt="News Icon" class="news-icon"/>
+            <a href="/berita.html" class="btn btn-info">Berita</a>
+          </div>
+        </div>
+        <div class="info-card purple-card">
+          <p>Track your Body Mass Index to understand your ideal weight range!</p>
+          <div class="info-btnbox">
+            <img src="/assets/calculate.png" alt="BMI Icon" class="bmi-icon"/>
+            <a href="/bmi.html" class="btn btn-info">BMI Calculator</a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="mission-section">
+        <blockquote>"Learn more about our mission to help you live healthier, one choice at a time."</blockquote>
+        <a href="/About.html" class="btn btn-about">About Us</a>
+      </section>
+    </main>
+    
     <script src="/js/index.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var startBtn = document.querySelector('.btn-start');
+        var featureRow = document.querySelector('.feature-row');
+        if (startBtn && featureRow) {
+          startBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            featureRow.scrollIntoView({ behavior: 'smooth' });
+          });
+        }
+      });
+    </script>
   </body>
 </html>

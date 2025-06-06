@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI-Chatbot</title>
     <!--Link goggle fonts untuk icon-->
-    <link rel="stylesheet" href="/css/chatbot.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"/>
+    <link rel="stylesheet" href="/css/chatbot.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
 </head>
+
 <body>
+    <!--Header-->
+    <header class="main-header">
+      <div class="logo">Diet Assistant</div>
+      <nav class="nav-menu">
+        <a href="/index.html">Beranda</a>
+        <a href="/chatbot.html">Chatbot</a>
+        <a href="/bmi.html">Kalkulator BMI</a>
+        <a href="/berita.html">Berita</a>
+        <a href="/About.html">About Us</a>
+      </nav>
+    </header>
     <div class="chatbot-popup">
         <!--Chatbot Header-->
         <div class="chat-header">
@@ -16,32 +31,45 @@
                 <span class="material-symbols-outlined">face_4</span>
                 <h2 class="logo-text">Chatbot</h2>
             </div>
-            <button id="close-chatbot" class="material-symbols-outlined">arrow_forward</button>
+            <button id="close-chatbot" class="material-symbols-outlined">
+                arrow_forward
+            </button>
         </div>
 
-         <!--Chatbot Body-->
+        <!--Chatbot Body-->
         <div class="chat-body">
             <!-- Pesan dari chatbot -->
             <div class="message bot-message">
                 <span class="material-symbols-outlined">face_4</span>
-                <div class="message-text">Hello!<br>I'm here to assist you. What do you need help with?</div>
+                <div class="message-text">
+                    Hello!<br />I'm here to assist you. What do you need help with?
+                </div>
             </div>
         </div>
 
-            <!-- Input untuk mengirim pesan -->
+        <!-- Input untuk mengirim pesan -->
         <div class="chat-footer">
             <form action="#" class="chat-form">
                 <textarea placeholder="Type your message here..." class="message-input" required></textarea>
-                    <div class="chat-controls">
-                        <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
-                        <div class="file-upload-wrapper">
-                            <input type="file" accept="images/*" class="file-upload-input" id="file-input" name="file-upload" hidden/>
-                            <img src="#">
-                            <button type="button" id="file-upload" class="material-symbols-outlined">attach_file</button>
-                            <button type="button" id="file-cancel" class="material-symbols-outlined">close</button>
-                        </div>
-                        <button id="send-message" type="button"  class="material-symbols-outlined">send</button>                      
+                <div class="chat-controls">
+                    <button type="button" id="emoji-picker" class="material-symbols-outlined">
+                        sentiment_satisfied
+                    </button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" class="file-upload-input" id="file-input"
+                            name="file-upload" hidden />
+                        <img src="#" />
+                        <button type="button" id="file-upload" class="material-symbols-outlined">
+                            attach_file
+                        </button>
+                        <button type="button" id="file-cancel" class="material-symbols-outlined">
+                            close
+                        </button>
                     </div>
+                    <button id="send-message" type="button" class="material-symbols-outlined">
+                        send
+                    </button>
+                </div>
             </form>
         </div>
     </div>
@@ -51,4 +79,5 @@
 
     <script src="/js/chatbot.js" defer></script>
 </body>
+
 </html>
